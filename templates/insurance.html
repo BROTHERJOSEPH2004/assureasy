@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssureEasy - Insurance</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>AssureEasy</h1>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/insurance">Insurance</a>
+            <a href="/compare">Compare</a>
+            <a href="/buy">Buy</a>
+            <a href="/reminders">Reminders</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-header">
+        <h2>Insurance Made Easy</h2>
+        <p>
+            Learn about different types of insurance and find the
+            protection that suits your needs.
+        </p>
+    </section>
+
+    <section class="insurance-cards">
+
+        <div class="card">
+            <h3>Health Insurance</h3>
+            <p>
+                Helps cover medical expenses such as doctor visits,
+                treatments and hospital care.
+            </p>
+            <button onclick="showMessage('Health Insurance')">
+                Learn More
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Car Insurance</h3>
+            <p>
+                Protect your vehicle against accidents, damage,
+                theft and other unexpected events.
+            </p>
+            <button onclick="showMessage('Car Insurance')">
+                Learn More
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Home Insurance</h3>
+            <p>
+                Provides protection for your home and belongings
+                against certain unexpected events.
+            </p>
+            <button onclick="showMessage('Home Insurance')">
+                Learn More
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Life Insurance</h3>
+            <p>
+                Provides financial protection for your loved ones
+                when you are no longer around.
+            </p>
+            <button onclick="showMessage('Life Insurance')">
+                Learn More
+            </button>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 AssureEasy. All rights reserved.</p>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

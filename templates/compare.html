@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AssurEasy - Compare Insurance</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>AssurEasy</h1>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/insurance">Insurance</a>
+            <a href="/compare">Compare</a>
+            <a href="/buy">Buy</a>
+            <a href="/reminders">Reminders</a>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="page-header">
+        <h2>Compare Insurance Plans</h2>
+
+        <p>
+            Compare different insurance options and choose the
+            protection that best fits your needs and budget.
+        </p>
+    </section>
+
+
+    <section class="comparison">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Type</th>
+                    <th>Monthly Price</th>
+                    <th>Coverage</th>
+                    <th>Choose</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Health Basic</td>
+                    <td>Health</td>
+                    <td>$20/month</td>
+                    <td>Basic medical care</td>
+                    <td>
+                        <a href="/buy" class="button">Select</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Health Plus</td>
+                    <td>Health</td>
+                    <td>$35/month</td>
+                    <td>Extended medical care</td>
+                    <td>
+                        <a href="/buy" class="button">Select</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Moto Basic</td>
+                    <td>Moto</td>
+                    <td>$15/month</td>
+                    <td>Basic motorcycle protection</td>
+                    <td>
+                        <a href="/buy" class="button">Select</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Moto Plus</td>
+                    <td>Moto</td>
+                    <td>$25/month</td>
+                    <td>Extended motorcycle protection</td>
+                    <td>
+                        <a href="/buy" class="button">Select</a>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <section class="comparison-note">
+
+        <h3>What should you compare?</h3>
+
+        <ul>
+            <li>Monthly or yearly price</li>
+            <li>What is covered</li>
+            <li>What is not covered</li>
+            <li>Maximum coverage amount</li>
+            <li>Policy duration</li>
+            <li>Renewal conditions</li>
+        </ul>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>&copy; 2026 AssurEasy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

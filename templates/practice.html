@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Practice - AssureEasy</title>
+
+    <link rel="stylesheet"
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/insurance">Insurance</a>
+            <a href="/compare">Compare</a>
+            <a href="/buy">Buy</a>
+            <a href="/reminders">Reminders</a>
+            <a href="/exercises">Exercises</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Practice 💻</h1>
+            <p>
+                Practice your coding skills with simple beginner exercises.
+            </p>
+        </div>
+    </section>
+
+    <section class="exercises-section">
+        <div class="container">
+
+            <div class="exercise-card">
+
+                <div class="exercise-number">01</div>
+
+                <h2>Python Basics</h2>
+
+                <p>
+                    Let's start with a simple Python question.
+                </p>
+
+                <p class="question">
+                    Which symbol is used to assign a value to a variable
+                    in Python?
+                </p>
+
+                <div class="options">
+
+                    <button onclick="checkAnswer(this, true)">
+                        =
+                    </button>
+
+                    <button onclick="checkAnswer(this, false)">
+                        ==
+                    </button>
+
+                    <button onclick="checkAnswer(this, false)">
+                        +
+                    </button>
+
+                    <button onclick="checkAnswer(this, false)">
+                        :
+                    </button>
+
+                </div>
+
+                <p id="feedback"></p>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<script>
+function checkAnswer(button, correct) {
+
+    const feedback = document.getElementById("feedback");
+
+    if (correct) {
+        feedback.textContent = "🎉 Correct! Great job!";
+        feedback.className = "correct";
+    } else {
+        feedback.textContent = "❌ Not quite. Try again!";
+        feedback.className = "wrong";
+    }
+}
+</script>
+
+</body>
+</html>

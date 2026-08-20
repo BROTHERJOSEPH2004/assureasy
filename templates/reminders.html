@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AssurEasy - Renewal Reminders</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>AssurEasy</h1>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/insurance">Insurance</a>
+            <a href="/compare">Compare</a>
+            <a href="/buy">Buy</a>
+            <a href="/reminders">Reminders</a>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="page-header">
+        <h2>Insurance Renewal Reminders</h2>
+
+        <p>
+            Never forget to renew your insurance. Add your policy
+            details and keep track of important renewal dates.
+        </p>
+    </section>
+
+
+    <section class="reminder-container">
+
+        <div class="reminder-form">
+
+            <h3>Add a Reminder</h3>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="policy">Insurance Type</label>
+
+                    <select id="policy" name="policy" required>
+                        <option value="">Select insurance</option>
+                        <option value="health">Health Insurance</option>
+                        <option value="moto">Moto Insurance</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="provider">Insurance Provider</label>
+
+                    <input
+                        type="text"
+                        id="provider"
+                        name="provider"
+                        placeholder="Enter provider name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="renewal-date">Renewal Date</label>
+
+                    <input
+                        type="date"
+                        id="renewal-date"
+                        name="renewal-date"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email for Reminder</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+
+                <button type="submit" class="button">
+                    Add Reminder
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="reminder-info">
+
+            <h3>Why use reminders?</h3>
+
+            <div class="info-card">
+                <h4>⏰ Stay on time</h4>
+                <p>
+                    Know when your insurance policy is about to expire.
+                </p>
+            </div>
+
+
+            <div class="info-card">
+                <h4>🔔 Avoid missed renewals</h4>
+                <p>
+                    Get a reminder before your policy needs to be renewed.
+                </p>
+            </div>
+
+
+            <div class="info-card">
+                <h4>📋 Stay organised</h4>
+                <p>
+                    Keep important insurance information in one place.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>&copy; 2026 AssurEasy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
