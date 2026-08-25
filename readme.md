@@ -4,7 +4,7 @@
 
 AssurEasy is a modern web-based insurance platform designed to make insurance services simple, accessible, and easy to understand.
 
-The platform helps users discover insurance services, understand different types of insurance coverage, and access important information through a simple and user-friendly interface.
+The platform helps users discover insurance services, understand different types of insurance coverage, and access important information through a simple and user-friendly interface. ok 1
 
 ## 🎯 Project Objective
 
